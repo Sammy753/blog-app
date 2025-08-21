@@ -1,0 +1,311 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0F172A;
+    padding: 0px 6rem;
+    font-family: sans-serif;
+}
+body time{
+    color: rgb(190, 190, 190);
+}
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0px;
+}
+.logo{
+    width: 150px;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin: 0px 20px;
+    text-decoration: ;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    /* letter-spacing: 0.05cm; */
+}
+.container{
+    width: 100%;
+}
+.container-1{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin: 50px 0px;
+    width: 98%;
+}
+.content-container{
+    width: 55%;
+    color: white;
+}
+.content-container p{
+    margin: 25px 0px;
+    font-size: 20px;
+    line-height: 2rem;
+}
+body h2{
+    font-size: 30px;
+}
+.icon-container{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.icon-container .icon img{
+    width: 50px;
+    /* margin: 0px 20px; */
+}
+/* .icon-container .icon .i2, .i3{
+    /* margin: 0px 30px; */
+/*} */
+.mockup{
+    width: 250px;
+}
+.recent-project-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 4rem 0px;
+    color: white;
+}
+.recent-project-container h2{
+    margin-top: 40px;
+}
+.non-h2-part{
+    width: 100%;
+    height: 990px;
+    margin: 70px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.project1-content{
+    width: 65%;
+    height: 60%;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 1px;
+    /* justify-content: space-between; */
+}
+.recent-project-container .project-1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+}
+.recent-project-container .project-1 img{
+    padding-left: 4rem;
+    /* width: 250px; */
+}
+.button-project-heading{
+    width: 25%;
+    /* height: 70px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.button-project-heading h3{
+    font-size: 25px;
+    font-weight: 500;
+}
+.project1-content p{
+    line-height: 30px;
+}
+.button-project-heading button{
+    width: 90px;
+    height: 25px;
+    font-weight: bolder;
+    border-style: none;
+    border-radius: 5px;
+}
+.recent-project-container .project2-content{
+    width: 65%;
+    height: 60%px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 1px;
+    /* justify-content: space-between; */
+}
+.recent-project-container .project-2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+}
+.recent-project-container .project-2 img{
+    padding-left: 6rem;
+    /* width: 250px; */
+}
+.button-project-heading2{
+    width: 25%;
+    /* height: 70px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.button-project-heading2 h3{
+    font-size: 25px;
+    font-weight: 500;
+}
+.project2-content p{
+    line-height: 30px;
+}
+.button-project-heading2 button{
+    width: 90px;
+    height: 25px;
+    font-weight: bolder;
+    border-style: none;
+    border-radius: 5px;
+}
+.recent-project-container .project3-content{
+    width: 65%;
+    height: 60%;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 1px;
+}
+.recent-project-container .project-3{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+}
+.recent-project-container .project-3 img{
+    padding-left: 6rem;
+    /* width: 250px; */
+}
+.button-project-heading3{
+    width: 25%;
+    /* height: 70px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.button-project-heading3 h3{
+    font-size: 25px;
+    font-weight: 500;
+}
+.project3-content p{
+    line-height: 30px;
+}
+.button-project-heading3 button{
+    width: 90px;
+    height: 25px;
+    font-weight: bolder;
+    border-style: none;
+    border-radius: 5px;
+}
+.latest-posts{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.latest-posts .latest-posts-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.latest-posts .latest-posts-header .view-all a{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    width: 144px;
+    justify-content: space-between;
+}
+.latest-posts .latest-posts-header .view-all a p{
+    color: white;
+    font-weight: bolder;
+}
+.latest-posts .latest-posts-header .view-all a img{
+    width: 30px;
+    height: 30px;
+}
+.latest-posts .all-post{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 40px 0px;
+}
+.post1, .post2, .post3{
+    width: 32%;
+    height: 500px;
+    
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+}
+.post1-content, .post2-content, .post3-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0px auto;
+}
+.post1 .post1-img, .post2 .post2-img, .post3 .post3-img{
+    width: 100%;
+}
+.input-container{
+    position: relative;
+    width: 400px;
+    display: flex;
+}
+.input-container input{
+    width: 100%;
+    height: 50px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-style: none;
+}
+.input-container button{
+    width: 35%;
+    height: 80%;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    border-style: none;
+    background: linear-gradient(135deg, rgb(0, 132, 255), rgb(0, 183, 255));
+    font-weight: bold;
+    font-size: 15px;
+}
