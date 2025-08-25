@@ -1,0 +1,28 @@
+.anime{
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    background-color: orange;
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    position: relative;
+}
+@keyframes anime {
+    0%{background-color: orange;}
+    25%{background-color: red;}
+    50%{background-color: orangered;}
+    100%{background-color: yellow;}
+}
+.transform{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    border-radius: 5px;
+    transform: transition, 5s;
+}
+.transform:hover{
+    transform: translate(500px, 200px);
+}
