@@ -12,6 +12,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100%;
 }
 .overall-body{
     margin: 0px 7rem;
@@ -19,7 +20,7 @@ body{
 body time{
     color: rgb(190, 190, 190);
 }
-.navbar-container{
+.navbar-containers{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,21 +29,26 @@ body time{
 .logo{
     width: 200px;
 }
-ul{
+.navbar-containers .header-nav{
     display: flex;
     justify-content: space-between;
     width: 25%;
 }
-ul li{
+.navbar-containers .header-nav .li{
     list-style: none;
     /* margin: 0px 20px; */
 }
-ul li a{
+.navbar-containers .header-nav .li .a{
     color: white;
     text-decoration: none;
     font-weight: 700;
     font-size: 18px;
+    transition: 0.2s;
+    transition-timing-function: linear;
     /* letter-spacing: 0.05cm; */
+}
+.navbar-containers .header-nav .li .a:hover{
+    color: rgb(0, 204, 255);
 }
 .container{
     width: 100%;
@@ -85,19 +91,35 @@ body h2{
 
 .Subscribe-content{
     display: flex;
+    flex-direction: column;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-top: 15rem;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 5.3rem;
 }
 .Subscribe-content-header{
-    width: 50%;
+    width: 80%;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Subscribe-content-header h2{
+    text-align: center;
+    font-size: 50px;
+}
+.Subscribe-content-header p{
+    width: 100%;
+    line-height: 1.5rem;
+}
+.Subscribe-content-header ul{
+    /* margin-left: 10rem; */
+    margin: 2rem 0px 2rem 4rem;
 }
 .input-container{
     position: relative;
-    width: 40%;
+    width: 80%;
     display: flex;
 }
 .input-container input{
@@ -110,7 +132,7 @@ body h2{
     background-color: rgba(255, 255, 255, 0.04);
 }
 .input-container .button{
-    width: 35%;
+    width: 25%;
     height: 80%;
     /* position: relative; */
     position: absolute;
@@ -121,9 +143,9 @@ body h2{
     cursor: pointer;
     border-radius: 20px;
     border-style: none;
-    background: linear-gradient(135deg, rgb(0, 132, 255), rgb(0, 183, 255));
+    background: linear-gradient(135deg, rgb(0, 100, 255), rgb(0, 183, 255));
     font-weight: bold;
-    font-size: 15px;
+    font-size: 17px;
 }
 hr{
     margin: 0px;
@@ -135,7 +157,8 @@ hr{
 footer{
     margin: 10px 5rem;
     color: white;
-    height: 78px;
+    height: 80px;
+    align-items: end;
     
 }
 .footer-body{
@@ -156,7 +179,161 @@ footer{
     /* width: 26px;
     height: 30px; */
 }
-.Posts , .Projects, .Newsletter, .Ixart, .quosdelectus, .sit-amet {
+.ipsum, .Newsletter, .amet {
     /* color: linear-gradient(135deg, rgb(0, 132, 255), rgb(0, 183, 255)); */
     color: rgb(0, 204, 255);
+}
+
+@media screen and (max-width: 480px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #0F172A;
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    p{
+        font-size: 11px;
+    }
+    .overall-body{
+        margin: 0px 1.3rem;
+    }
+    body time{
+        color: rgb(190, 190, 190);
+    }
+    .navbar-containers{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0px;
+    }
+    .logo{
+        width: 50%;
+    }
+    .header-nav{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        gap: 10px;
+        /* gap: 10%; */
+    }
+    .header-nav .li{
+        list-style: none;
+        /* margin: 0px 20px; */
+    }
+    .header-nav .li .a{
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 12px;
+        
+        /* letter-spacing: 0.05cm; */
+    }
+    .Subscribe-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 5.3rem;
+    }
+    .Subscribe-content-header{
+        width: 100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Subscribe-content-header h2{
+        text-align: center;
+        font-size: 25px;
+        margin: 2rem 0px;
+    }
+    .Subscribe-content-header p{
+        width: 100%;
+        line-height: 1.5rem;
+    }
+    .Subscribe-content-header ul{
+        /* margin-left: 10rem; */
+        margin: 2rem 0px 2rem 2rem;
+        font-size: 11px;
+        color: #CBD5E1;
+        line-height: 1.5rem;
+    }
+    .input-container{
+        position: relative;
+        width: 100%;
+        display: flex;
+    }
+    .input-container input{
+        width: 100%;
+        height: 50px;
+        padding: 10px 30px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        border-style: none;
+        background-color: rgba(255, 255, 255, 0.04);
+    }
+    .input-container .button{
+        width: 30%;
+        height: 80%;
+        /* position: relative; */
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 6px 10px;
+        cursor: pointer;
+        border-radius: 20px;
+        border-style: none;
+        background: linear-gradient(135deg, rgb(0, 100, 255), rgb(0, 183, 255));
+        font-weight: bolder;
+        font-size: 14px;
+    }
+    footer{
+        margin: 10px 1rem;
+        height: 80px;
+    }
+    .footer-body{
+        width: 100%;
+        /* height: 100px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        line-height: 15px;
+        /* position: relative; */
+        /* padding-bottom: 5px; */
+    }
+    .footer-content p{
+        font-size: 10px;
+    }
+    .footer-icon{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+    }
+    .footer-icon img{
+        width: 20px;
+        height: 22px;
+    }
+    p{
+        color: #CBD5E1;
+    }
+    .Posts , .Projects, .Newsletter, .Ixart, .quosdelectus, .sit-amet {
+        /* color: linear-gradient(135deg, rgb(0, 132, 255), rgb(0, 183, 255)); */
+        color: rgb(0, 204, 255);
+    }
 }
